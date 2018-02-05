@@ -72,6 +72,8 @@ gulp.task('lib',function () {
   .pipe(gulp.dest('dist/lib/jquery'));
   gulp.src('node_modules/bootstrap/dist/**/*.*')
   .pipe(gulp.dest('dist/lib/bootstrap'));
+  gulp.src('node_modules/respond.js/dest/**/*.*')
+  .pipe(gulp.dest('dist/lib/respond'));
 })
 //任务：默认任务，把上面的任务组合起来一起执行
 gulp.task('default',['html','js','less','img','lib','watch','browser-sync']);
