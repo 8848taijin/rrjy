@@ -1,3 +1,6 @@
+.tel{
+  background: url('../images/tel-white.png') no-repeat center left!important;
+}
   *{ padding:0px; margin:0px}
   .m{overflow: hidden; width: 100%; height:auto;margin-left: auto; margin-right: auto; }
   .m img{ width:100%;}
@@ -51,18 +54,18 @@
     }
   }
   #t1{
-    top:770px;
+    top:900px;
     color:#fff;
 
   }
   #t2{
-    top:1770px;
+    top:1870px;
   }
   #t3{
-    top:2770px;
+    top:2910px;
   }
   #t4{
-    top:3390px;
+    top:3890px;
   }
   body{
     width: 100%;
@@ -113,6 +116,7 @@
     }
     .students{
       .student-list{
+        position: relative;
         ul{
           text-align: center;
           li{
@@ -140,7 +144,31 @@
               height: 110%;
             }
           }
-        }        
+        }  
+        .student-text{
+          margin: 0 auto;
+          width: 1160px;
+          height: 400px;
+          text-align: center;
+          line-height: 400px;
+          margin-top: 10px;
+          font-family: "楷体";
+          border-radius: 20px;
+          border: 1px solid #fbc72b;
+          color:#fbc72b;
+          letter-spacing:20px;
+          font-size: 60px;
+        }
+        .student-mask{
+          border-radius: 20px;
+          top:315px;
+          left: 70px;
+          position: absolute;
+          background-color: #fff;
+          width: 0;
+          transition: all 3s;
+          height: 400px;
+        }   
       }
     }
   }
