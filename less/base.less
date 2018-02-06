@@ -1,3 +1,5 @@
+/* 初始化样式 */
+
 html, body,header,nav, img, ul, li, div, span,input {
   margin: 0;
   padding: 0;
@@ -16,57 +18,153 @@ ul,li{
   margin: 0;
   padding: 0;
 }
+
+
+
+
+/* 头部区域 */
 header{
   width: 100%;
-  height: 30px;
-  background-color: purple;
+  height: 62px;
+  vertical-align: middle;
 }
+/* 头部logo开始*/
+.header-logo{
+    height: 62px;
+    margin: 10px auto 0;
+}
+.logo{
+    width: 60px;
+    height: 47px;
+    margin-left: -15px;
+    background: url('../images/logo.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+.con{
+    height: 44px;
+    border-left: 1px solid #999;
+    padding-left: 20px;
+    p{
+        font-size: 15px;
+        color: #5c5c5c;
+    }
+}
+.con1{ 
+    a{
+        font-size: 16px;
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 3px; 
+        }
+}
+.tel{
+    height: 32px;
+    background: url('../images/tel.png') no-repeat center left;
+    padding-left: 34px;
+    font-size: 22px;
+    margin-top: 4px;
+    a{
+       color: #333;
+    }
+}
+
+
+
+/* 导航栏区域 */
 nav{
   width: 100%;
   background: #4a4b48;
   font-size: 18px;
   .container{
-    height: 48px;
+    height: 50px;
+    .icon-bar {
+      background-color: #fff;
+    }
     .logo_{
       display: inline-block;
-      height: 48px;
+      height: 50px;
       margin: 0;
       padding: 0; 
       background: url("../images/logo_.png") no-repeat;
-      background-size: 48px;
+      background-size: 50px;
     }
     .logotit{
       display: inline-block;
       width: 149px;
-      height: 48px;
-      margin-left: 48px;
+      height: 50px;
+      margin-left: 50px;
       background: url("../images/yjh.png") no-repeat;
       background-size: 150px 40px;
     }
     .nav{
       margin: 0;
+      margin-right: -25px;
       .line{
         float: left;
         line-height: 45px;
         color: #fff;
       }
+      li.active a:hover{
+          color: #FD1834;
+        }
       li{
+        height: 50px;
+        line-height: 50px;
+        margin: 0 8px;
         a{
+          position: relative;
           color: #eee;
           line-height: 18px;
+          background-color: transparent;
+          .line2{
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100px;
+            display: block;
+            height: 4px;
+          }
         }
         a:hover{
-          color: #FD1834;
-          background-color: #4a4b48;
+          color: #62F1FC;
+          background-color: transparent;
+          .line2{
+            width: 100px;
+          }
         }
-        height: 48px;
-        line-height: 48px;
-        margin: 0 8px;
       }
     }
   }
 }
 .navbar{
   border-radius: 0;
+  border: 0;
 }
-
+.active{
+  background-color: #62F1FC;
+}
+@media (max-width: 1200px){
+  nav .container .nav li{
+    margin: 0;
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px){
+  nav .container .nav li{
+    margin: 0;
+    font-size: 12px;
+    a{
+      padding: 15px 10px;
+    }
+  }
+}
+@media (max-width: 768px){
+  nav .container .nav li{
+    margin: 0;
+    font-size: 18px;
+    a{
+      padding: 15px 15px;
+      color: #666;
+    }
+  }
+}
