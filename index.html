@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-    <title>人人教育————首页</title>
-    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <!--[if lt IE 9]>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <title>人人教育————首页</title>
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" type="text/css" href="./lib/bxslider/jquery.bxslider.min.css">
+  <!--[if lt IE 9]>
     <script src="./lib/respond/respond.min.js"></script>
     <script src="./lib/html5shiv/html5shiv.min.js"></script>
-    <![endif]-->
+  <![endif]-->
 </head>
 <body>
+<<<<<<< HEAD
   <header></header>
+=======
+    <header>
+    <!-- 头部logo -->
+    <div class="header-logo container">
+      <div class="pull-left logo"></div>
+      <div class="pull-left con">
+        <p class="con1"><a href="">郑州人人科技公司</a></p>
+        <p>云计划WEB前端</p>
+      </div>
+      <div class="pull-right tel">
+        <a href="#">
+          400-820-8820
+        </a>
+      </div>
+    </div>
+  </header>
+>>>>>>> 14816d9a444c43b0dea8563d1d1d4b2e78af4056
   <nav class="navbar">
     <div class="container">
       <div class="navbar-header">
@@ -29,22 +49,84 @@
       <div class="collapse navbar-collapse clearfix" id="downlist">
         <ul class="nav navbar-nav pull-right">
           <li class="active"><a href="#">首页</a></li><span class="line">|</span>
-          <li><a href="#">Web前端</a></li><span class="line">|</span>
-          <li><a href="#">Java编程+大数据</a></li><span class="line">|</span>
-          <li><a href="#">Python人工智能</a></li><span class="line">|</span>
-          <li><a href="#">学员风采</a></li><span class="line">|</span>
-          <li><a href="#">关于我们</a></li>
+          <li><a href="./page/web.html">Web前端</a></li><span class="line">|</span>
+          <li><a href="./page/java.html">Java编程+大数据</a></li><span class="line">|</span>
+          <li><a href="./page/python.html">Python人工智能</a></li><span class="line">|</span>
+          <li><a href="./page/students.html">学员风采</a></li><span class="line">|</span>
+          <li><a href="./page/aboutus.html">关于我们</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <a href="page/web.html">web</a>
-  <a href="page/python.html">python</a>
-  <a href="page/java.html">java</a>
-  <a href="page/students.html">students</a>
-  <a href="page/aboutus.html">aboutus</a>
+  <div class="container">
+    <div class="m">
+      <ul class="bxslider">
+        <li><img src="./images/curcol-01.png"/></li>
+        <li><img src="./images/curcol-02.png"/></li>
+        <li><img src="./images/curcol-03.png"/></li>
+        <li><img src="./images/curcol-04.png"/></li>
+      </ul>
+    </div>
+    <div class="prospect">
+      <span id="t1" class="title">
+        <span>互联网发展趋势</span>
+      </span>
+      <div class="content">
+        <div class="prev-text">看数据-HTML市场展望</div>
+        <img src="images/sczx.png">
+        <img src="images/jyxz.jpg">
+        <div class="next-text">
+          <button class="btn btn-lg btn-gd">了解市场走向</button>
+          <button class="btn btn-lg btn-gd">获取更多数据</button>
+        </div>
+      </div>
+    </div>
+    <div class="company">
+      <span id="t2" class="title">
+        <span>公司实力</span>
+      </span>
+      <div class="content">
+      </div>
+    </div>
+    <div class="students">
+      <span id="t3" class="title">
+        <span>就业之星</span>
+      </span>
+      <div class="student-list">
+        <ul>
+          <li><div class="mask"></div><img src="./images/studentsImg/001.png"></li>
+          <li><div class="mask"></div><img src="./images/studentsImg/002.png"></li>
+          <li><div class="mask"></div><img src="./images/studentsImg/003.png"></li>
+          <li><div class="mask"></div><img src="./images/studentsImg/012.png"></li>
+          <li><div class="mask"></div><img src="./images/studentsImg/008.png"></li>
+        </ul>
+        <div class="student-text">
+          <p>用技术实现理想</p>
+        </div>
+        <div class="student-mask">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="teachers">
+      <span id="t4" class="title">
+        <span>讲师团队</span>
+      </span>
+    </div>
+  </div>
+  <div class="mesg">
+    <div class="head">
+      <span>和我们联系</span>
+      <span id="lt-up" class="glyphicon glyphicon-chevron-up"></span>
+    </div>
+    <canvas id="cvs" width="400" height="380" ></canvas>
+    <div class="input">
+      <input type="text"><button type="button">发送</button>
+    </div>
+  </div>
   <script src="./lib/jquery/jquery.min.js"></script>
   <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./lib/bxslider/jquery.bxslider.min.js"></script>
   <script src="./js/index.js"></script>
 </body>
 </html>
