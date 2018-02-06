@@ -1,0 +1,18 @@
+$(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+(function(win){
+  setTimeout(function(){
+    $(".mesg").css("bottom",0);
+    $("#lt-up").toggleClass('glyphicon-chevron-up').toggleClass('glyphicon-chevron-down');
+  },1000)
+  $("#lt-up").on("click",function(){
+    if($("#lt-up").hasClass('glyphicon-chevron-up')){
+      $(".mesg").css("bottom",'0');
+      $("#lt-up").toggleClass('glyphicon-chevron-down').toggleClass('glyphicon-chevron-up');
+    }else{
+     $(".mesg").css("bottom",'-420px');
+     $("#lt-up").toggleClass('glyphicon-chevron-up').toggleClass('glyphicon-chevron-down');
+   }
+ })
+})(window)
