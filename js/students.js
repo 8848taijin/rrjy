@@ -126,24 +126,6 @@ $(function(){
       jy:'中移在线服务有限公司',
       zw:'web前端工程师',
       xz:'年薪7.4万+五险一金'
-    },
-    {
-      name:'曹坤',
-      img:'../images/studentsImg/015.png',
-      yx:'华北水利水电大学',
-      zy:'土木工程',
-      jy:'深圳市思源计算机软件有限公司',
-      zw:'web前端工程师',
-      xz:'10000+五险一金'
-    },
-    {
-      name:'郝天旺',
-      img:'../images/studentsImg/016.png',
-      yx:'河南工业大学',
-      zy:'生物工程',
-      jy:'文思海辉技术有限公司',
-      zw:'Web前端开发工程师',
-      xz:'9500+五险一金'
     }
   ],i;
   for(i=0;i<users.length;i++){
@@ -152,18 +134,15 @@ $(function(){
       $('<div class="every col-xs-12 col-sm-12 col-md-6 "></div>')
       .append($('<div></div>')
         .append($('<i><span>优秀学员</span></i>'))
-        .append($('<b></b>'))
-        .append($('<s></s>'))
-        .append($('<span></span>'))
         .append($('<img src="'+users[i].img+'" alt="">'))
         .append($('<span class="name">'+users[i].name+'</span>'))
         .append($('<p></p>')
           .html(
-            '毕业院校'+users[i].yx+
-            '<br>专业'+users[i].zy+
-            '<br>就业公司'+users[i].jy+
-            '<br>职位'+users[i].zw+
-            '<br>薪资'+users[i].xz))
+            '毕业院校&nbsp;'+users[i].yx+
+            '<br>专业&nbsp;'+users[i].zy+
+            '<br>就业公司&nbsp;'+users[i].jy+
+            '<br>职位&nbsp;'+users[i].zw+
+            '<br>薪资&nbsp;'+users[i].xz))
         )
       );
   }

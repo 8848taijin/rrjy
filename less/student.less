@@ -4,6 +4,65 @@
 }
 body{
   min-width: 490px;
+  background-image: url('../images/bg-guisado.jpg');
+}
+nav{
+  position: absolute !important;
+  width: 48px;
+  background: #4a4b48;
+  font-size: 18px;
+  .container{
+    width: 48px;
+    height: 48px;
+    .logo_{
+      display: inline-block;
+      height: 48px;
+      margin: 0;
+      padding: 0; 
+      background: url("../images/logo_.png") no-repeat;
+      background-size: 48px;
+    }
+    .logotit{
+      display: inline-block;
+      width: 0;
+      height: 48px;
+      margin-left: 48px;
+      background: url("../images/yjh.png") no-repeat;
+      background-size: 150px 40px;
+    }
+    .nav{
+      display: none;
+      margin: 0;
+      .line{
+        float: left;
+        line-height: 45px;
+        color: #fff;
+      }
+      li{
+        a{
+          color: #eee;
+          line-height: 18px;
+        }
+        a:hover{
+          color: #FD1834;
+          background-color: #4a4b48;
+        }
+        height: 48px;
+        line-height: 48px;
+        margin: 0 8px;
+      }
+    }
+    #downlist{
+      display: none !important;
+    }
+  }
+  &:hover{
+    &{width: 100%;}
+    .container{width: 1170px;}
+    .nav{display: inline-block;}
+    .logotit{width: 149px;}
+    #downlist{display: inline-block!important;}
+  }
 }
 // 横幅*********
 .container-fluid{
@@ -27,54 +86,36 @@ body{
   .every{
     padding:40px;
     div{
-      background-color: #262626;
+      background-color: #061b38;
       padding: 40px;
       text-align: center;
+      border: 2px solid #666;
       border-radius: 20px;
       i{
         position: absolute;
         top: 10px;
-        left: -40px;
-        width: 240px;
-        height: 240px;
+        left: -10px;
+        width: 140px;
+        height: 140px;
         border-radius: 50%;
         text-align: center;
-        line-height: 280px;
+        line-height: 180px;
         font-style:normal; 
-        background-color: #00b0f0;
+        background-color: #1ab9fd;
         z-index: 2;
         span{
+          overflow: hidden;
           display: inline-block;
           width: 80px;
           font-weight: 700;
-          font-size: 40px;
-          line-height: 40px;
+          font-size: 30px;
+          line-height: 30px;
           color: #272322;
         }
       }
-      b{
-        position: absolute;
-        top: -30px;
-        left: 100px;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background-color: #2dc8ff;
-        z-index: 1;
-      }
-      s{
-        position: absolute;
-        top: 50px;
-        left: 170px;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: #00a7e2;
-        z-index: 0;
-      }
       img{
         position: relative;
-        width: 268px;
+        width: 80%;
         height: 423px;
         margin-top: 40px;
         margin-bottom: 40px;
@@ -106,6 +147,7 @@ body{
       }
       &:hover{
         p{visibility: visible;}
+        img{opacity: 0.5;}
       }
     }
   }
