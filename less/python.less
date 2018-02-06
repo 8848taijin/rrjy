@@ -1,0 +1,86 @@
+body{
+  background: url('../images/bg-guisado.jpg');
+}
+section{
+  position: relative;
+  margin-top: 50px;
+  color: #fff;
+  .linear{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fbc72b;
+    width: 101%;
+    transform: skewY(-7deg);
+  }
+  .project{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    .box{
+      height: calc(100% - 50%);
+      position: relative;
+      .text-b{
+        position: absolute;
+        left: 0; 
+        bottom: 0;
+        width: 600px;
+        height: 461px;
+        border-radius: 7px;
+        background-color: rgb(255,171,0);
+        >p{
+          padding: 30px;
+          font-size: 16px;
+          line-height: 25px;
+        }
+        .four{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .text-s{
+        position: absolute;
+        top: 14em;
+        right: 50px;
+        border-radius: 7px;
+        width: 291px;
+        height: 360px;
+        color: #ffab00;
+        text-align: center;
+        background-color: rgb(255,255,255);
+        >p{
+          padding: 40px;
+          font-size: 27px;
+        }
+        .four-text{
+          padding: 10px;
+          font-size: 25px;
+        }
+        >img{
+          width: 100%;
+          height: 150px;
+        }
+      }
+    }
+    .box-r{
+      color: #ffab00;
+      padding-top: 7em;
+      >h2{
+        padding-bottom: 20px;
+      }
+      >span{
+        padding: 5px;
+        font-size: 18px;
+        border: 2px solid #fff;
+      }
+    }
+  }
+  .row{
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
