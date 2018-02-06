@@ -1,232 +1,240 @@
 .tel{
   background: url('../images/tel-white.png') no-repeat center left!important;
 }
-  *{ padding:0px; margin:0px}
-  .m{overflow: hidden; width: 100%; height:auto;margin-left: auto; margin-right: auto; }
-  .m img{ width:100%;}
-  .bx-wrapper{
-    margin-bottom: 0!important;
-    border: none!important;
-  }
-  .bx-wrapper .bx-pager{
-    bottom: 40px!important;
-  }
-  .m:hover .bx-wrapper .bx-controls-direction a.bx-prev{
-    left: 0;
-  }
-  .m:hover .bx-wrapper .bx-controls-direction a.bx-next{
-    right: 0;
-  }
-  .m .bx-wrapper .bx-controls-direction a{
-    height: 100%;
-    transition: all .8s;
-    width: 120px;
-    top: 0;
-    margin-top: 0;
-    display: inline-block;
-    z-index: 66;
-  }
-  .m .bx-wrapper .bx-controls-direction a.bx-prev{
-    left: -80px;
-    background: linear-gradient(to left,rgba(255,255,255,0),60%,#212121);
-  } 
-  .m .bx-wrapper .bx-controls-direction a.bx-next{
-    right: -80px;
-    background: linear-gradient(to right,rgba(255,255,255,0),60%,#212121);
-  } 
-  .title{
+*{ padding:0px; margin:0px}
+.m{overflow: hidden; width: 100%; height:auto;margin-left: auto; margin-right: auto; }
+.m img{ width:100%;}
+.bx-wrapper{
+  margin-bottom: 0!important;
+  border: none!important;
+}
+.bx-wrapper .bx-pager{
+  bottom: 40px!important;
+}
+.m:hover .bx-wrapper .bx-controls-direction a.bx-prev{
+  left: 0;
+}
+.m:hover .bx-wrapper .bx-controls-direction a.bx-next{
+  right: 0;
+}
+.m .bx-wrapper .bx-controls-direction a{
+  height: 100%;
+  transition: all .8s;
+  width: 120px;
+  top: 0;
+  margin-top: 0;
+  display: inline-block;
+  z-index: 66;
+}
+.m .bx-wrapper .bx-controls-direction a.bx-prev{
+  left: -80px;
+  background: linear-gradient(to left,rgba(255,255,255,0),60%,#212121);
+} 
+.m .bx-wrapper .bx-controls-direction a.bx-next{
+  right: -80px;
+  background: linear-gradient(to right,rgba(255,255,255,0),60%,#212121);
+} 
+.title{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #fbc72b;
+  width: 100%;
+  transform: skewY(-5deg);
+  span{
+    cursor: pointer;;
+    display: block;
     position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: #fbc72b;
-    width: 100%;
-    transform: skewY(-5deg);
-    span{
-      cursor: pointer;;
-      display: block;
-      position: absolute;
-      top:-50px;
-      left:300px;
-      transform: skewY(5deg);
-      font-size: 26px;
-      color:#fbc72b;
-    }
+    top:-80px;
+    left:300px;
+    transform: skewY(5deg);
+    font-size: 26px;
+    color:#fbc72b;
   }
-  #t1{
-    top:900px;
-    color:#fff;
+}
+#t1{
+  top:935px;
+  color:#fff;
 
+}
+#t2{
+  top:1838px;
+}
+#t3{
+  top:2810px;
+}
+#t4{
+  top:3650px;
+}
+body{
+  width: 100%;
+  min-width: 1300px;
+  height: 6000px;
+  background: url("../images/bg-guisado.jpg");
+  .container{
+    padding: 0;
+    width: 1300px;
   }
-  #t2{
-    top:1870px;
-  }
-  #t3{
-    top:2910px;
-  }
-  #t4{
-    top:3890px;
-  }
-  body{
-    width: 100%;
-    min-width: 1300px;
-    height: 6000px;
-    background: url("../images/bg-guisado.jpg");
-    .container{
-      padding: 0;
-      width: 1300px;
+  .prospect,.teachers,.students,.company{
+    padding-top: 120px;
+    .content{
+      transform: skewY(-5deg);
+      margin-left: -320px;
+      padding-top: 60px;
+      left: 0;
+      width: 147.8%;
+      text-align: center;
     }
-    .prospect,.teachers,.students,.company{
-      padding-top: 230px;
-      .content{
-        margin-left: -320px;
-        padding-top: 60px;
-        left: 0;
-        width: 147.8%;
+  }
+  .prospect{
+    .content{
+      background: url("../images/bg.jpg");
+      .prev-text{
+        transform: skewY(5deg);
+        color:#fff;
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 50px;
+      }
+      .next-text{
+        .btn-gd{
+          background-color: #fbc72b;
+          margin: 50px 250px 50px;
+          transform: skewY(5deg);
+        }
+      }
+      img{
+        transform: skewY(5deg);
+        margin: 0 50px;
+      }
+    }
+  }
+  .company{
+    .title{
+      transform: skewY(5deg);
+      span{
+        left: 77%;
+        transform: skewY(-5deg);
+      }
+    }
+    .content{
+      position: relative;
+      top:50px;
+      transform: skewY(5deg);
+      height: 800px;
+      background: url("../images/bg1.png");
+      background-size: 100%;
+      background-attachment: fixed;
+    }
+  }
+  .students{
+    padding-top: 400px;
+    .student-list{
+      overflow: hidden;
+      position: relative;
+      ul{
         text-align: center;
-      }
-    }
-    .prospect{
-      .content{
-        background: url("../images/bg.jpg");
-        .prev-text{
-          color:#fff;
-          font-size: 30px;
-          font-weight: normal;
-          margin-bottom: 50px;
-        }
-        .next-text{
-          .btn-gd{
-            background-color: #fbc72b;
-            margin: 50px 250px 50px;
-          }
-        }
-        img{
-          margin: 0 50px;
-        }
-      }
-    }
-    .company{
-      .content{
-        height: 800px;
-        background: url("../images/bg1.png");
-        background-size: 100%;
-        background-attachment: fixed;
-      }
-    }
-    .students{
-      .student-list{
-        position: relative;
-        ul{
-          text-align: center;
-          li{
-            margin: 0 20px;
-            display: inline-block;
-            width: 200px;
-            height: 300px;
-            border: 1px solid #fff;
-            overflow: hidden;
-            position: relative;
-            .mask{
-              position: absolute;
-              top: -50px;
-              left: -100px;
-              border-radius: 50%;
-              width: 400px;
-              height: 400px;
-              transition: all 1s;
-              box-shadow: -0 -0 0px 0px rgba(0,0,0,0.5) inset;
-              &:hover{
-                box-shadow:-0 -0 400px 400px rgba(0,0,0,0.5) inset;
-              }
+        li{
+          margin: 0 40px;
+          display: inline-block;
+          width: 300px;
+          height: 500px;
+          border: 1px solid #fff;
+          overflow: hidden;
+          position: relative;
+          .mask{
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            border-radius: 50%;
+            width: 500px;
+            height: 700px;
+            transition: all 1s;
+            box-shadow: -0 -0 0px 0px rgba(0,0,0,0.5) inset;
+            span{
+              display: block;
+              line-height: 30px;
+              font-size: 16px;
+              color:#fff;
+              margin-top: 400px;
             }
-            img{
-              height: 110%;
+            &:hover{
+              box-shadow:-0 -0 400px 400px rgba(0,0,0,0.5) inset;
             }
           }
-        }  
-        .student-text{
-          margin: 0 auto;
-          width: 1160px;
-          height: 400px;
-          text-align: center;
-          line-height: 400px;
-          margin-top: 10px;
-          font-family: "楷体";
-          border-radius: 20px;
-          border: 1px solid #fbc72b;
-          color:#fbc72b;
-          letter-spacing:20px;
-          font-size: 60px;
+          img{
+            height: 110%;
+          }
         }
-        .student-mask{
-          border-radius: 20px;
-          top:315px;
-          left: 70px;
-          position: absolute;
-          background-color: #fff;
-          width: 0;
-          transition: all 3s;
-          height: 400px;
-        }   
+      }  
+    }
+  }
+  .teachers{
+    .title{
+      transform: skewY(5deg);
+      span{
+        left: 77%;
+        transform: skewY(-5deg);
       }
     }
   }
-  .mesg{
-    z-index: 88;
-    position: fixed;
-    bottom: -420px;
-    right: 0;
-    width: 400px;
-    height: 460px;
-    border: 1px solid #999;
-    background-color: #fff;
-    transition: all 1.5s;
-  }
-  .mesg .head{
-    background-color: #242424;
-    height: 40px;
-    border: 5px solid transparent;
-    box-sizing: border-box;
-    border-bottom:1px solid #242424;
-    span{
-      font-size: 16px;
-      padding-left: 10px;
-      color: #fff;
-      line-height: 30px;
-    }
-    span.glyphicon{
-      cursor: pointer;
-      margin-right: 10px;
-      float: right;
-    }
-  }
-  .mesg canvas{
-    vertical-align: top;
-    
-  }
-  .mesg .input{
-    height: 40px;
-    background-color: #aaa;
-    text-align: center;
-  }
-  .mesg .input input{
-    padding:0;
-    margin: 0;
-    height: 40px;
-    width: 80%;
-    vertical-align: top;
-    box-sizing: border-box;
-    border-left: 1px solid #ccc;
-  }
-  .mesg .input button{
-    background-color: #242424;
-    color: #fff;
-    border: none;
+}
+.mesg{
+  z-index: 88;
+  position: fixed;
+  bottom: -420px;
+  right: 0;
+  width: 400px;
+  height: 460px;
+  border: 1px solid #999;
+  background-color: #fff;
+  transition: all 1.5s;
+}
+.mesg .head{
+  background-color: #242424;
+  height: 40px;
+  border: 5px solid transparent;
+  box-sizing: border-box;
+  border-bottom:1px solid #242424;
+  span{
     font-size: 16px;
-    padding:0;
-    margin: 0;
-    height: 40px;
-    width: 20%;
+    padding-left: 10px;
+    color: #fff;
+    line-height: 30px;
   }
+  span.glyphicon{
+    cursor: pointer;
+    margin-right: 10px;
+    float: right;
+  }
+}
+.mesg canvas{
+  vertical-align: top;
+
+}
+.mesg .input{
+  height: 40px;
+  background-color: #aaa;
+  text-align: center;
+}
+.mesg .input input{
+  padding:0;
+  margin: 0;
+  height: 40px;
+  width: 80%;
+  vertical-align: top;
+  box-sizing: border-box;
+  border-left: 1px solid #ccc;
+}
+.mesg .input button{
+  background-color: #242424;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding:0;
+  margin: 0;
+  height: 40px;
+  width: 20%;
+}
 

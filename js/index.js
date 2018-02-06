@@ -1,53 +1,63 @@
 $(document).ready(function(){
   $('.bxslider').bxSlider();
   var users=[
-    {
-      name:'王勇浩',
-      img:'../images/studentsImg/001.png',
-      yx:'郑州大学（8队）',
-      zy:'计算机网络安全',
-      jy:'上海晓联信息技术有限公司',
-      zw:'Web前端开发工程师',
-      xz:' 10300+五险一金'
-    },
-    {
-      name:'周明航',
-      img:'../images/studentsImg/002.png',
-      yx:'郑州大学（7队）',
-      zy:'计算机科学与技术',
-      jy:'上海宝信软件股份有限公司',
-      zw:'Web前端开发工程师',
-      xz:'10000+五险一金'
-    },
-    {
-      name:'赵少坤',
-      img:'../images/studentsImg/003.png',
-      yx:'郑州大学（9队）',
-      zy:'计算机程序编译',
-      jy:'文思海辉技术有限公司',
-      zw:'Web前端开发工程师',
-      xz:'8000+五险一金'
-    },
-    {
-      name:'钱超亚',
-      img:'../images/studentsImg/012.png',
-      yx:'郑州大学（9队）',
-      zy:'计算机程序编译',
-      jy:'上海宏恒软件有限公司',
-      zw:'Web前端开发工程师',
-      xz:'8000+五险一金'
-    },
-    {
-      name:'罗皓',
-      img:'../images/studentsImg/008.png',
-      yx:'郑州大学（9队）',
-      zy:'计算机程序编译',
-      jy:'上海云贝网络科技有限公司',
-      zw:'Java开发工程师',
-      xz:'7500+五险一金'
-    }
+  {
+    name:'王勇浩',
+    img:'../images/studentsImg/001.png',
+    yx:'郑州大学（8队）',
+    zy:'计算机网络安全',
+    jy:'上海晓联信息技术有限公司',
+    zw:'Web前端开发工程师',
+    xz:' 10300+五险一金'
+  },
+  {
+    name:'周明航',
+    img:'../images/studentsImg/002.png',
+    yx:'郑州大学（7队）',
+    zy:'计算机科学与技术',
+    jy:'上海宝信软件股份有限公司',
+    zw:'Web前端开发工程师',
+    xz:'10000+五险一金'
+  },
+  {
+    name:'赵少坤',
+    img:'../images/studentsImg/003.png',
+    yx:'郑州大学（9队）',
+    zy:'计算机程序编译',
+    jy:'文思海辉技术有限公司',
+    zw:'Web前端开发工程师',
+    xz:'8000+五险一金'
+  },
+  {
+    name:'钱超亚',
+    img:'../images/studentsImg/012.png',
+    yx:'郑州大学（9队）',
+    zy:'计算机程序编译',
+    jy:'上海宏恒软件有限公司',
+    zw:'Web前端开发工程师',
+    xz:'8000+五险一金'
+  },
+  {
+    name:'罗皓',
+    img:'../images/studentsImg/008.png',
+    yx:'郑州大学（9队）',
+    zy:'计算机程序编译',
+    jy:'上海云贝网络科技有限公司',
+    zw:'Java开发工程师',
+    xz:'7500+五险一金'
+  }
   ]
-  
+  $(".student-list li").on("mouseover",function(){
+      $(this).children(".mask").children("span").html(
+        '毕业院校&nbsp;'+users[$(this).index()].yx+
+        '<br>专业&nbsp;'+users[$(this).index()].zy+
+        '<br>就业公司&nbsp;'+users[$(this).index()].jy+
+        '<br>职位&nbsp;'+users[$(this).index()].zw+
+        '<br>薪资&nbsp;'+users[$(this).index()].xz);
+  });
+  $(".student-list li").on("mouseleave",function(){
+    $(this).children(".mask").children("span").html("");
+  });
 });
 (function(win){
   setTimeout(function(){
