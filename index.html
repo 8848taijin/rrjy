@@ -16,13 +16,17 @@
   <![endif]-->
 </head>
 <body>
-    <header>
+  <!-- 头部logo 开始-->
+  <header>
     <!-- 头部logo -->
     <div class="header-logo container">
       <div class="pull-left logo"></div>
       <div class="pull-left con">
         <p class="con1"><a href="">郑州人人科技公司</a></p>
         <p>云计划WEB前端</p>
+      </div>
+      <div class="pull-left search-box">
+        <input type="text" placeholder="Web培训 Jave编程"><span class="searchbtn"><i class="iconsearch"></i></span>
       </div>
       <div class="pull-right tel">
         <a href="#">
@@ -31,6 +35,9 @@
       </div>
     </div>
   </header>
+  <!-- 头部logo 结束-->
+
+  <!-- 导航条 开始-->
   <nav class="navbar">
     <div class="container">
       <div class="navbar-header">
@@ -54,7 +61,11 @@
       </div>
     </div>
   </nav>
+  <!-- 导航条 结束-->
+
+  <!-- 主要内容 开始-->
   <div class="container">
+    <!-- 轮播图 开始-->
     <div class="m">
       <ul class="bxslider">
         <li><img src="./images/curcol-01.png"/></li>
@@ -63,6 +74,9 @@
         <li><img src="./images/curcol-04.png"/></li>
       </ul>
     </div>
+    <!-- 轮播图 结束-->
+
+    <!-- prospect start -->
     <div class="prospect">
       <span id="t1" class="title">
         <span>互联网发展趋势</span>
@@ -77,6 +91,9 @@
         </div>
       </div>
     </div>
+    <!-- prospect end-->
+
+    <!-- 公司实力 开始-->
     <div class="company">
       <span id="t2" class="title">
         <span>公司实力</span>
@@ -84,6 +101,9 @@
       <div class="content">
       </div>
     </div>
+    <!-- 公司实力 结束-->
+    
+    <!-- 优秀学员 开始 -->
     <div class="students">
       <span id="t3" class="title">
         <span>就业之星</span>
@@ -96,26 +116,83 @@
         </ul>
       </div>
     </div>
-    <div class="teachers">
-      <span id="t4" class="title">
-        <span>讲师团队</span>
-      </span>
-    </div>
-  </div>
-  <div class="mesg">
-    <div class="head">
-      <span>和我们联系</span>
-      <span id="lt-up" class="glyphicon glyphicon-chevron-up"></span>
-    </div>
-    <canvas id="cvs" width="400" height="380" ></canvas>
-    <div class="input">
-      <input type="text"><button type="button">发送</button>
-    </div>
-  </div>
-  <script src="./lib/jquery/jquery.min.js"></script>
-  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./lib/bxslider/jquery.bxslider.min.js"></script>
-  <script src="./js/index.js"></script>
-</body>
-</html>
+    <!-- 优秀学员 结束-->
 
+    <!-- 讲师团队 开始-->
+    <div class="teachers">
+      <span id="t4" class="title"><span>讲师团队</span></span>
+      <div class="teacher">
+        <img src="./images/zhuLaoShi.png">
+        <div class="name">朱泰然</div>
+        <div class="tea-text">
+          <span class="time">2005-2008</span>   
+          <span class="tea-company">英国恒兴业</span> 
+          <span class="post">软件工程师</span><br/>
+          <span class="time">2009-2011</span>   
+          <span class="tea-company">深圳吉奥麦特</span> 
+          <span class="post">项目经理</span><br/>
+          <span class="time">2011-2012</span>   
+          <span class="tea-company">北京太极软件</span> 
+          <span class="post">项目经理</span><br/>
+          <span class="time">1012-2014</span>   
+          <span class="tea-company">中软国际</span> 
+          <span class="post">架构师</span><br/>
+          <span class="time text-last">2014-至今</span>   
+          <span class="tea-company">云计划人人教育</span>
+          <span class="post">教学总监</span><br/>
+          <div class="jingli">          
+            朱泰然拥有10多年的技术开发及项目管理经验，擅长Java <br/>Web系统开发，在教学中善于将深奥的问题用通俗易懂的方式教授给学员。参与开发了:<br/>
+            1,恒兴业——恒兴业外汇期货在线交易系统。<br/>
+            2,吉奥麦特——广东省水利厅三防管理监控系统。<br/>
+            3,太极软件——铁道部12306订票系统。<br/>
+            4,中软国际——国家电网运营监控系统。<br/>
+          </div>
+
+          </div>
+        </div>
+        <div class="teacher shao">
+          <img src="./images/SaoLaoShi.png">
+          <div class="name shao-name">邵坤鹏</div>
+          <div class="tea-text">
+          <span class="time">2011-2012</span>   
+          <span class="tea-company">58同城</span> 
+          <span class="post">Java工程师</span><br/>
+          <span class="time">2012-2015</span>   
+          <span class="tea-company">美团</span> 
+          <span class="post">全栈工程师</span><br/>
+          <span class="time">2015-2016</span>   
+          <span class="tea-company">云计划宇通车研所</span> 
+          <span class="post">项目经理</span><br/>
+          <span class="time">2016-至今</span>   
+          <span class="tea-company">云计划人人教育</span> 
+          <span class="post">高级讲师</span><br/>
+          <div class="jingli">          
+              邵坤鹏拥有6年的技术开发及项目管理经验，擅长前后端交互和嵌入式开发。从前端到后台都有丰富的产品和实战经历，对ionic、Node JS、ReactNative等有深入的研究，同时也是开源社区参与者和贡献者。在58同城参与了58同城网站的开发，在美团参与开发了美团点评推荐平台等项目的开发。
+          </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- 讲师团队 结束-->
+    </div>
+    <!-- 主要内容 结束-->
+
+    <!-- 和我们联系 开始-->
+    <div class="mesg">
+      <div class="head">
+        <span>和我们联系</span>
+        <span id="lt-up" class="glyphicon glyphicon-chevron-up"></span>
+      </div>
+      <canvas id="cvs" width="400" height="380" ></canvas>
+      <div class="input">
+        <input type="text"><button type="button">发送</button>
+      </div>
+    </div>
+    <!-- 和我们联系 结束-->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./lib/bxslider/jquery.bxslider.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+  </html>

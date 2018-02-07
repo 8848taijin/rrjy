@@ -41,14 +41,12 @@
   height: 2px;
   background-color: #fbc72b;
   width: 100%;
-  transform: skewY(-5deg);
   span{
     cursor: pointer;;
     display: block;
     position: absolute;
-    top:-80px;
+    top:-60px;
     left:300px;
-    transform: skewY(5deg);
     font-size: 26px;
     color:#fbc72b;
   }
@@ -70,7 +68,6 @@
 body{
   width: 100%;
   min-width: 1300px;
-  height: 6000px;
   background: url("../images/bg-guisado.jpg");
   .container{
     padding: 0;
@@ -79,7 +76,6 @@ body{
   .prospect,.teachers,.students,.company{
     padding-top: 120px;
     .content{
-      transform: skewY(-5deg);
       margin-left: -320px;
       padding-top: 60px;
       left: 0;
@@ -91,7 +87,6 @@ body{
     .content{
       background: url("../images/bg.jpg");
       .prev-text{
-        transform: skewY(5deg);
         color:#fff;
         font-size: 30px;
         font-weight: normal;
@@ -101,27 +96,17 @@ body{
         .btn-gd{
           background-color: #fbc72b;
           margin: 50px 250px 50px;
-          transform: skewY(5deg);
         }
       }
       img{
-        transform: skewY(5deg);
         margin: 0 50px;
       }
     }
   }
   .company{
-    .title{
-      transform: skewY(5deg);
-      span{
-        left: 77%;
-        transform: skewY(-5deg);
-      }
-    }
     .content{
       position: relative;
       top:50px;
-      transform: skewY(5deg);
       height: 800px;
       background: url("../images/bg1.png");
       background-size: 100%;
@@ -169,14 +154,68 @@ body{
         }
       }  
     }
+    .teachers{
+      img{
+        padding-top: 50px;
+        width: 100%;
+      }
+    }
   }
   .teachers{
-    .title{
-      transform: skewY(5deg);
-      span{
-        left: 77%;
-        transform: skewY(-5deg);
+    padding-top: 300px;
+    text-align: center;
+    .shao{
+      .tea-text{
+        padding-top: 100px!important;
       }
+    }
+    .teacher{
+      .name{
+        float: left;
+        margin-left: 160px;
+        margin-top: 10px;
+        color:#fff;
+        font-size: 24px;
+        text-align: left;
+      }
+      margin: 0 2.5%;
+      overflow: hidden;
+      width: 30%;
+      height: 666px; 
+    }
+    .tea-text{
+      position: absolute;
+      color:#fff;
+      font-size: 24px;
+      padding-top: 40px;
+      line-height: 36px;
+      text-align: left;
+      left: 40%;
+      font-family: "微软雅黑";
+      span{
+        position: absolute;
+      }
+      .time{
+        color:#aa0;
+      }
+      .tea-company{
+        left: 160px;
+      }
+      .post{
+        color:#a00;
+        left: 380px;
+      }
+      .jingli{
+        margin-top: 20px;
+        width: 800px;
+      }
+      .text-last{
+        margin-bottom: 40px;
+      }
+    }
+    img{
+      width: 100%;
+      float: left;
     }
   }
 }
@@ -237,4 +276,3 @@ body{
   height: 40px;
   width: 20%;
 }
-

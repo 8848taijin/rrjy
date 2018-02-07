@@ -1,5 +1,3 @@
-/* 初始化样式 */
-
 html, body,header,nav, img, ul, li, div, span,input {
   margin: 0;
   padding: 0;
@@ -47,7 +45,8 @@ header{
     padding-left: 20px;
     p{
         font-size: 15px;
-        color: #fff;
+        color: #5c5c5c;
+        margin-bottom: 4px;
     }
 }
 .con1{ 
@@ -55,7 +54,6 @@ header{
         font-size: 16px;
         color: #fff;
         font-weight: bold;
-        margin-bottom: 3px; 
         }
 }
 .tel{
@@ -63,12 +61,42 @@ header{
     background: url('../images/tel.png') no-repeat center left;
     padding-left: 34px;
     font-size: 22px;
-    margin-top: 4px;
+    margin-top: 15px;
     a{
        color: #fff;
     }
 }
-
+.search-box{
+  margin: 10px 0 0 300px;
+  input{
+    width: 300px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 10px;
+    border: 1px solid #ff7800;
+    font-size: 14px;
+    color: #a9a9a9;
+  }
+  .searchbtn{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 44px;
+    height: 34px;
+    margin-left: -5px;
+    background: #ff7800;
+    color: #fff;
+    .iconsearch{
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-position: 0 -191px;
+      margin-top: 5px;
+      margin-right: 0;
+      background-image: url("../images/icon.png");
+    }
+  }
+}
 
 
 /* 导航栏区域 */
@@ -117,21 +145,10 @@ nav{
           color: #eee;
           line-height: 18px;
           background-color: transparent;
-          .line2{
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100px;
-            display: block;
-            height: 4px;
-          }
         }
         a:hover{
           color: #62F1FC;
           background-color: transparent;
-          .line2{
-            width: 100px;
-          }
         }
       }
     }
@@ -169,3 +186,4 @@ nav{
     }
   }
 }
+
